@@ -26,23 +26,23 @@ class HomeScreen extends React.Component {
             <View style={styles.viewContainerStyles}>
                 <View style={styles.buttonContainer}>
                     <Image style={styles.pdfIcon} source={require('../resources/edit.png')}/>
-                    <TouchableHighlight onPress={() => navigation.navigate('Info')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Info')}>
                         <Text style={styles.manualText}>enter your grades</Text>
-                    </TouchableHighlight>
+                    </TouchableOpacity>
                 </View>
 
                 <View style={styles.buttonPdfContainer}>
                     <Image style={styles.pdfIcon} source={require('../resources/pdf.png')}/>
-                    <TouchableHighlight onPress={() => navigation.navigate('Info')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Info')}>
                         <Text style={styles.manualText}>with Notenspiegel pdf</Text>
-                    </TouchableHighlight>
+                    </TouchableOpacity>
                 </View>
 
                 <View style={styles.buttonContainer}>
                     <Image style={styles.pdfIcon} source={require('../resources/login.png')}/>
-                    <TouchableHighlight onPress={() => navigation.navigate('Info')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Info')}>
                         <Text style={styles.manualText}>Login with Stisys</Text>
-                    </TouchableHighlight>
+                    </TouchableOpacity>
                 </View>            
             </View>
       );
