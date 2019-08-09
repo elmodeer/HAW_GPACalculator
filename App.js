@@ -1,17 +1,13 @@
-import { createStackNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import HomeScreen from './src/screens/HomeScreen';
+import React from 'react';
+import AppNavigator from './src/AppNavigator';
 
-const navigator = createStackNavigator(
-  {
-    Home: HomeScreen
-  },
-  {
-    initialRouteName: 'Home',
-    defaultNavigationOptions: {
-      title: 'HAW gpa calculator'
-    }
+
+
+class App extends React.Component {
+  render() {
+      return (
+          <AppNavigator />         
+      );
   }
-  );
-
-export default createAppContainer(navigator);
-
+}
+export default App ;
