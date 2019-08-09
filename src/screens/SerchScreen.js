@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const PdfScreen = () => {
+const SerchScreen = () => {
     return(
         <View>
             <Text>
@@ -15,4 +15,4 @@ const styles = {
 
 };
 
-export default PdfScreen;
+export default SerchScreen;

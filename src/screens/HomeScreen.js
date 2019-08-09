@@ -1,49 +1,12 @@
 import React from 'react';
 import { Button, Image, View, Text, StyleSheet, TouchableOpacity, TouchableHighlight } from 'react-native';
 
-class HomeScreen extends React.Component {
-    static navigationOptions = ({navigation}) => {
-        return {
-            headerTitle: <Image
-                                source={require('../resources/hawLogo.png')}
-                                style={styles.logoStyle}
-                          />,
-            headerRight: (
-                <TouchableOpacity onPress={() => navigation.navigate('Info')}>
-                    <Image
-                        source={require('../resources/info.jpg')}
-                        style={styles.infoIconStyle}
-                    />
-                </TouchableOpacity>
-              
-            ),
-        };
-    };
-    
+class HomeScreen extends React.Component { 
     render() {
       const {navigation} = this.props ;
       return (            
             <View style={styles.viewContainerStyles}>
-                <View style={styles.buttonContainer}>
-                    <Image style={styles.pdfIcon} source={require('../resources/edit.png')}/>
-                    <TouchableOpacity onPress={() => navigation.navigate('Info')}>
-                        <Text style={styles.manualText}>enter your grades</Text>
-                    </TouchableOpacity>
-                </View>
-
-                <View style={styles.buttonPdfContainer}>
-                    <Image style={styles.pdfIcon} source={require('../resources/pdf.png')}/>
-                    <TouchableOpacity onPress={() => navigation.navigate('Info')}>
-                        <Text style={styles.manualText}>with Notenspiegel pdf</Text>
-                    </TouchableOpacity>
-                </View>
-
-                <View style={styles.buttonContainer}>
-                    <Image style={styles.pdfIcon} source={require('../resources/login.png')}/>
-                    <TouchableOpacity onPress={() => navigation.navigate('Info')}>
-                        <Text style={styles.manualText}>Login with Stisys</Text>
-                    </TouchableOpacity>
-                </View>            
+                          
             </View>
       );
     }
