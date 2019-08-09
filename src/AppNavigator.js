@@ -1,11 +1,17 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from './screens/HomeScreen';
 import InfoScreen from './screens/InfoScreen';
+import PdfScreen from './screens/PdfScreen';
+import ManualCalcScreen from './screens/ManualCalcScreen';
+import StisysScreen from './screens/StisysScreen';
 
 const AppNavigator = createStackNavigator(
     {
       Home: HomeScreen,
-      Info: InfoScreen
+      Info: InfoScreen,
+      Manual: ManualCalcScreen,
+      Pdf: PdfScreen,
+      Stisys: StisysScreen
     },
     {
       initialRouteName: 'Home',
