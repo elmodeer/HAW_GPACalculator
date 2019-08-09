@@ -5,8 +5,8 @@ class LogoTitle extends React.Component {
     render() {
       return (
         <Image
-          source={require('../resources/logoTransparet.png')}
-          style={styles.imageStyle}
+          source={require('../resources/hawLogo.png')}
+          style={styles.logoStyle}
         />
       );
     }
@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
                 <TouchableOpacity onPress={() => navigation.navigate('Info')}>
                     <Image
                         source={require('../resources/info.jpg')}
-                        style={styles.infoStyle}
+                        style={styles.infoIconStyle}
                     />
                 </TouchableOpacity>
               
@@ -57,12 +57,12 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#DCDCDC',
     },
-    imageStyle: {
+    logoStyle: {
         width: 140,
         height: 35, 
-        bottom: 5
+        bottom: 5,
     },
-    infoStyle: {
+    infoIconStyle: {
         width: 30,
         height: 30,
         margin: 4,
